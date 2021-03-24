@@ -4,20 +4,20 @@ def frame(x,y):
     penSize(3)
     penColor("black")
     brushColor("cyan")
-    rectangle(x,y,x+50,y+50)  
+    rectangle(x,y,x+100,y+100)  
 
 def roof(x,y):
     penSize(3)
     brushColor("salmon1")
-    polygon([(x-60,y),(x,y-100),(x+60,y),(x-60,y-60)])
+    polygon([(x-10,y),(x+50,y-50),(x+110,y),(x-10,y)])
 
 def window(x,y):
     penColor("white")
     penSize(3)
     brushColor("black")
-    rectangle(x-30,y-30,x,y+20)
-    line(x-30,y-10,x,y-10)
-    line(x-15,y-10,x-15,y+20)
+    rectangle(x+20,y+20,x+50,y+70)
+    line(x+20,y+40,x+50,y+40)
+    line(x+35,y+40,x+35,y+70)
     
 def home(x,y):
     frame(x,y)
@@ -31,8 +31,9 @@ print("идет поиск дома по айпи в маинкрафте...")
 print("выводим его изображение на экран")
 print("дом найден!")
 
-home(50,100)
-home(200,100)
-home(350,100)
-home(50,300)
+home(10,100)
+home(130,100)
+home(250,100)
+home(370,100)
 run()
+
