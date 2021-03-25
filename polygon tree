@@ -1,0 +1,9 @@
+from graph import *
+def tree (x,y,a,b):
+    polygon([(x,y),(x-a,y+b),(x+a,y+b)])
+brushColor("green4")
+tree(100,100,10,40)
+tree(100,140,20,10)
+tree(100,150,30,20)
+tree(100,170,50,30)
+run()
