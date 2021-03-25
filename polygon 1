@@ -1,0 +1,21 @@
+from graph import *
+
+def triangle(x,y):
+    polygon([(x,y+90),(x,y+130),(x+50,y+90)])
+
+brushColor("steel blue")   
+triangle(10,40)
+brushColor("OliveDrab1")
+triangle(60,40)
+brushColor("red")
+triangle(60,0) 
+
+#второе
+def tri(x,y):
+    polygon([(x+110,y+30),(x+160,y+30),(x+135,y+80)])
+tri(10,10)
+brushColor("cyan2")
+tri(35,60)
+brushColor("deeppink2")
+tri(60,10)
+run()
