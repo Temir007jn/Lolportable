@@ -1,9 +1,8 @@
 from graph import *
-
+penSize(3)
 def frame(x,y):
-    penSize(3)
     penColor("black")
-    brushColor("cyan")
+    brushColor("cyan") 
     rectangle(x,y,x+100,y+100)  
 
 def roof(x,y):
@@ -18,15 +17,12 @@ def window(x,y):
     rectangle(x+20,y+20,x+50,y+70)
     line(x+20,y+40,x+50,y+40)
     line(x+35,y+40,x+35,y+70)
-    
+
 def home(x,y):
     frame(x,y)
     roof(x,y)
     window(x,y)
- 
-print("введите координаты дома")
-x = int(input("x="))
-y = int(input("y="))
+    
 print("идет поиск дома по айпи в маинкрафте...")
 print("выводим его изображение на экран")
 print("дом найден!")
