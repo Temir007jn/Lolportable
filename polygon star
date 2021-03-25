@@ -1,0 +1,5 @@
+from graph import *
+def gigi (x,y,a,b):
+    polygon([(x,y),(x+a,y+b),(x+a,y+b),(x,y+b+b)])
+gigi(100,100,10,10)
+run()
