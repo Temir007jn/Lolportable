@@ -1,0 +1,10 @@
+def num(x,y,t,r,u):
+    number = x+y+t+r+u
+    number2 = number / 5
+    return number2
+x = int(input())
+y = int(input())
+t = int(input())
+r = int(input())
+u = int(input())
+print(num(x,y,t,r,u))
