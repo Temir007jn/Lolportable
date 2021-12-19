@@ -1,0 +1,10 @@
+def numberofdivisors(x):
+    num1 = x//100
+    num2 = x%100//10
+    num3 = x%100%10
+    num2 = num2*10
+    num3 = num3*100
+    num1 = num1 + num2 +num3
+    return num1
+x = int(input())
+print(numberofdivisors(x))
